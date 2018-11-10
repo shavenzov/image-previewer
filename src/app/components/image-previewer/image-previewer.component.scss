@@ -90,9 +90,7 @@ header{
 
 .picture{
   position: absolute;
-  left:50%;
-  top:50%;
-  transform: translate( -50%, -50% );
+  user-select: none;
 }
 
 .nav-button{
@@ -187,6 +185,23 @@ header{
       }
     }
   }
+}
+
+.zoom-info{
+  border-radius: 25%;
+  background-color: $ui-background-color;
+  opacity: 0.8;
+  width: 120px;
+  height: 80px;
+  position:absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left:50%;
+  top:50%;
+  font-weight: bold;
+  font-size: 38px;
+  transform: translate( -50%, -50% );
 }
 
 

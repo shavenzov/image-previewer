@@ -2,13 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>ImagePreviewer</title>
-  <base href="/">
+  <title>Image Previewer Component Demo</title>
   <meta http-equiv-"X-UA-Compatible" content="Edge" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+<app-root>
+    <style type="text/css">
+      .loader{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate( -50%, -50% );
+      }
+    </style>
+  
+<img class="loader" src="assets/loader.gif"/>
+  
+</app-root>
 </body>
 </html>

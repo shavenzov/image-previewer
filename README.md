@@ -8,7 +8,7 @@
 - Поддержка клавиатурных событий для навигации, масштабирования и закрытия.
 Для изображений можно использовать любой сервис с бесплатными картинками: Lorem Picsum, Place IMG или др.
 Для иконок можно использовать любой общедоступный набор: Font Awesome, Open Iconic или др.
-![Image previewer ui sketch](https://shavenzov.github.io/image-viewer/image002.png)
+![Image previewer ui sketch](https://shavenzov.github.io/image-previewer/image002.png)
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.

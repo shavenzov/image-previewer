@@ -14,7 +14,7 @@
 
 ### Реализация
 
-Смотрим здесь рабочее приложение : :camera: http://shavenzov.com/image-previewer/ :tv:
+Смотрим здесь рабочее приложение : :camera: https://shavenzov.github.io/image-previewer/ :tv:
 
 
 

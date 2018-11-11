@@ -63,7 +63,7 @@ export class ImagePreviewerComponent {
   /**
    * Current picture
    */
-  private get currentPicture(): Picture{
+  get currentPicture(): Picture{
     return this.pictures &&
            this.pictureIndex < this.pictures.length &&
            this.pictureIndex >= 0
@@ -98,31 +98,31 @@ export class ImagePreviewerComponent {
   /**
    * Returns true if current picture is last
    */
-  private get isLastPicture(): boolean{
+  get isLastPicture(): boolean{
     return this.pictureIndex === this.pictures.length - 1;
   }
 
   /**
    * Returns true if current picture is first
    */
-  private get isFirstPicture(): boolean{
+  get isFirstPicture(): boolean{
     return this.pictureIndex === 0;
   }
 
   /**
    * True if picture is dragging now by user
    */
-  private dragging: boolean = false;
+  dragging: boolean = false;
 
   /**
    * True if picture is loading now
    */
-  private loading: boolean = true;
+  loading: boolean = true;
 
   /**
    * True if information about scale presents on screen
    */
-  private zoomInfo: boolean = false;
+  zoomInfo: boolean = false;
 
   constructor( 
     private hostElement: ElementRef,
@@ -479,14 +479,14 @@ export class ImagePreviewerComponent {
   /**
    * Getter for formated zoom string
    */
-  private get formatedZoomString(): string{
+  get formatedZoomString(): string{
    return Math.round( this.zoom * 100 ).toString();
   }
 
   /**
    * On picture loaded callback
    */
-  private onPictureLoaded(): void{
+  onPictureLoaded(): void{
     this.loading = false;
     this.initialResize();
     this.centerPicture();

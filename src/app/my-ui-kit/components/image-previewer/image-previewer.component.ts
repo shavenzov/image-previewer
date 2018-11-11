@@ -161,13 +161,13 @@ export class ImagePreviewerComponent {
     }
 
     //Plus key pressed
-    if ( ( event.keyCode === 107 ) || ( event.keyCode === 187 ) ) {
+    if ( ( event.keyCode === 107 ) || ( event.keyCode === 187 ) || ( event.keyCode === 61 ) ) {
      this.zoomInButtonClick();
      return;
     }
 
     //Minus key pressed
-    if ( ( event.keyCode === 109 ) || ( event.keyCode === 189 ) ) {
+    if ( ( event.keyCode === 109 ) || ( event.keyCode === 189 ) || ( event.keyCode === 173 ) ) {
       this.zoomOutButtonClick();
       return;
     }

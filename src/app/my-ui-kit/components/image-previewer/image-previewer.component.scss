@@ -76,6 +76,7 @@ header{
 
   .title{
     margin-left: 16px;
+    width:100%;
   }
 
   .actions-panel{
@@ -91,6 +92,8 @@ header{
 .picture{
   position: absolute;
   user-select: none;
+  opacity:0;
+  transition: opacity 0.5s linear;
 }
 
 .nav-button{
@@ -120,7 +123,7 @@ header{
     transform: translate( -50%, -50% );
   }
 
-  &.next{
+  &.prev{
   
     right:$nav-buttons-margin;
     
@@ -129,7 +132,7 @@ header{
     }
   }
 
-  &.prev{
+  &.next{
     left:$nav-buttons-margin;
   
     svg{
@@ -201,6 +204,17 @@ header{
   top:50%;
   font-weight: bold;
   font-size: 38px;
+  transform: translate( -50%, -50% );
+  user-select: none;
+  opacity:0;
+  transition: opacity 0.25s linear;
+}
+
+.loader{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  width:150px;
   transform: translate( -50%, -50% );
 }
 

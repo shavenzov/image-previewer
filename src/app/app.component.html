@@ -1,8 +1,9 @@
-<div image-preview-container>
+<div image-preview-container [min-zoom]="0.15" [max-zoom]="1.0" [zoom-step]="0.05">
   <img *ngFor="let picsum of picsumList"
        [src]="picsum.preview_url"
-       [image-preview]="picsum.url">   
+       [image-url]="picsum.url"
+       [image-name]="picsum.filename"
+       [image-data]="picsum">   
 </div>
-<!-- <app-dialog-overlay></app-dialog-overlay>
-<app-image-previewer></app-image-previewer> -->
+
 

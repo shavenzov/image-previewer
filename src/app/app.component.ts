@@ -13,9 +13,9 @@ export class AppComponent implements OnInit {
   constructor( private picsum: PicsumService ){}
 
   ngOnInit(){
-    this.picsum.getRandomList( 25 ).subscribe( ( list ) => this.picsumList = list, ( error ) => {
-
-    } );
+    //Gets 25 random pictures from picsum service
+    this.picsum.getRandomList( 25 ).subscribe( list => this.picsumList = list,
+                                               error => {} );
   }
 
 }

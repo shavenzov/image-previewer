@@ -1,6 +1,7 @@
 # ImagePreviewer
 
 Необходимо реализовать компонент “Preview” согласно макету с использованием фреймворка Angular.
+
 Данный компонент должен обладать следующим функционалом:
 - Отображение поверх основного контента на всю ширину и высоту экрана.
 - Превью изображений с возможность навигации вперед и назад.
@@ -8,10 +9,18 @@
 - Поддержка клавиатурных событий для навигации, масштабирования и закрытия.
 Для изображений можно использовать любой сервис с бесплатными картинками: Lorem Picsum, Place IMG или др.
 Для иконок можно использовать любой общедоступный набор: Font Awesome, Open Iconic или др.
+
 ![Image previewer ui sketch](https://shavenzov.github.io/image-previewer/image002.png)
 
+### Реализация
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+Смотрим здесь рабочее приложение : :camera: http://shavenzov.com/image-previewer/ :tv:
+
+
+
+
+## Installing packages
+Run `npm install` for installing required node-module packages. Then run development server or build project. See sections below "Development server" and "Build".
 
 ## Development server
 
